@@ -1,0 +1,112 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@800&display=swap');
+
+header{
+	width: 100vw;
+	height: 10vh;
+	background-color: rgb(41, 41, 41);
+	display: flex;
+	align-items: center;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.logo img{
+	height: 9vh;
+}
+
+.menu{
+	background-color: rgb(102, 100, 104);
+	text-decoration: none;
+	padding: 10px 25px;
+	border-radius: 10px;
+	color: #fff;
+}
+header nav{
+	margin: 0 auto;
+}
+
+body{
+	background-color: rgb(75, 75, 75);
+	overflow-x: hidden;
+	font-family: 'Inter', sans-serif;
+}
+#bg-img{
+	width: 100vw;
+	height: 100vh;
+	background-image: url(https://i.imgur.com/Q4Q0SDa.jpg);
+	opacity: 0.1;
+	z-index: -99;
+	position: fixed;
+}
+
+.cont{
+
+}
+.cont2{
+	text-align: center;
+	color: red;
+}
+
+.conteudo{
+	max-width: 95%;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.link-conteudo{
+	width: 300px;
+	height: 250px;
+	text-align: center;
+    text-decoration: none;
+    /*background-color: rgb(255, 124, 124);*/
+    background-color: #8B0000;
+    border-radius: 10px;
+    color: white;
+    margin: 5px;
+}
+
+.link-conteudo img{
+	width: 300px;
+	height: 200px;
+	margin-bottom: 8px;
+}
+.link-conteudo:hover{
+    transform:scale(1.09,1.09);
+}
+
+/*---------CELULAR--------------*/
+@media screen and (max-width: 676px){
+	header{
+		height: 16vh;
+		padding-left: 0px;
+		padding-right: 0px;
+		display: flex;
+		flex-direction: column;
+	}
+	.logo{
+		display: flex;
+		margin: 0 auto;
+		justify-content: center;
+		z-index: 99;
+		margin-bottom: 15px;
+		/*display: none;*/
+	}
+	.menu{
+	/*display: none;*/
+	padding: 8px 20px;
+	}
+	header nav{
+	/*display: none;*/
+	}
+
+}
